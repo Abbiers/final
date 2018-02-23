@@ -1,0 +1,136 @@
+/* ===  CSS Reset ==== */ 
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html, body{
+	height:100%;
+	}
+/*-do this to ensure elements can have a height of 100% - */
+
+
+
+body{
+	background:#f0ead6;
+}
+
+nav{
+	background:#E0D427;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index: 999;
+	display: flex;
+}
+
+nav a:link {
+	flex-grow:1;
+	padding:10px;
+	color:cornflowerblue;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	transition: all 600ms ease;
+}
+nav a:visited{
+	color:#D6f0ea; 
+}
+
+nav a:hover{
+	background:#7AA248;
+	color:beige;
+}
+
+section {
+	width:100%;
+	min-height:100%;
+	height:auto;	
+}
+
+#s1{
+	background:url(../images/cherry.jpg) no-repeat center center;
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+
+
+#s1 hgroup{
+	background: rgba(240, 240, 240, 0.5);
+	border-radius: 8px;
+	box-shadow: 0px 0px 3px rgba(240, 240, 240, 0.4);
+	padding:10px;
+	text-align: center;
+}
+
+
+#s1 hgroup h1{
+	font-family:Lucida Grande, Verdana," sans-serif";
+	font-size:29px;
+	text-transform: capitalize;
+	text-align: center;
+	color:mediumvioletred;
+	
+}
+
+#s1 hgroup h2{
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-style:italic;
+	color:#440000;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+
+#s2{
+	background: url(../images/catus.jpg)no-repeat center center;
+	
+}
+
+
+
+#s2 aside{
+	
+	color:black;
+	width:30%;
+	margin:10px;
+	padding:10px;
+	
+}
+
+#s2 aside{
+/*
+	font-family: Georgia, serif;
+	font-size: 16px;
+	font-style:italic;
+	line-height: 22px;
+*/
+	font: italic 16px/22px Georgia,serif;
+}
+#s2 article{
+	
+	margin:10px;
+	padding:20px;
+	
+}
+
+#s2 article{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size:20px;
+	text-transform: capitalize;
+	text-align: center;
+	color:yellow;
+}
+
+#s2 article{
+	font:20px/24px Lucida Grande, Verdana," sans-serif"; 
+	margin-bottom:20px;
+	color:whitesmoke;
+}
+

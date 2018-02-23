@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body onload="startTime()">
+
+<div id="txt" style="position: absolute; bottom: 38px; right: 24px;"></div>
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<nav>
+	<a href="index.html">Home</a>
+	<a href="about.html">About Myself</a>
+	<a href="portfolio.html">Graphic/Print</a>
+	<a href="contact.html">contact</a>
+</nav>
+
+
+
+<section id="s1">
+		<hgroup>
+			<h1>Information</h1>
+			<h2>Here is some inforomartion about ...</h2>
+		</hgroup>
+</section>
+
+<section id="s2">
+	<aside>
+		<p><p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p></p>
+	</aside>
+	
+	
+	<article class="large">
+		<h1>article headline</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsam corporis nisi, aut architecto fugiat voluptates nesciunt provident cum, est qui excepturi ea officia accusamus nihil deleniti reprehenderit autem corrupti?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsam corporis nisi, aut architecto fugiat voluptates nesciunt provident cum, est qui excepturi ea officia accusamus nihil deleniti reprehenderit autem corrupti?</p>
+	</article>
+	<aside>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, iste vitae. Voluptate distinctio ex, iusto in eveniet dolorem laudantium cum, enim quasi velit incidunt tenetur doloribus ratione laborum expedita nemo!</p>
+	</aside>
+
+
+</section>
+
+</body>
+</html>
